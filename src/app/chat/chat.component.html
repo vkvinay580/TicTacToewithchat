@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <style>
+    body {
+      padding: 1px;
+      background-color: black;
+      color: black;
+      font-size: 30px;
+    }
+  </style>
+<body>
+<img src=
+       "https://www.artistandinnovation.eu/wp-content/uploads/2020/10/miskolci-650x325-1.png"/>
+<
+</body>
+<body>
+<!--<header class="align-content-center bg-dark">-->
+<!--    <nav class="navbar navbar-expand-md navbar-dark align-content-center bg-dark">-->
+<!--        <a class="navbar-brand align-content-center font-weight-bold" href="#">TicTacToe Chat</a>-->
+<!--&lt;!&ndash;        <button class="navbar-toggler bg-dark" type="button" data-toggle="collapse" data-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">&ndash;&gt;-->
+<!--&lt;!&ndash;          <span class="navbar-toggler-icon bg-dark"></span>&ndash;&gt;-->
+<!--&lt;!&ndash;        </button>&ndash;&gt;-->
+<!--&lt;!&ndash;        <div class="collapse navbar-collapse bg-dark" id="navbarsExample04">&ndash;&gt;-->
+<!--&lt;!&ndash;          <ul class="navbar-nav mr-auto bg-dark">&ndash;&gt;-->
+<!--&lt;!&ndash;          </ul>&ndash;&gt;-->
+<!--&lt;!&ndash;        </div>&ndash;&gt;-->
+<!--      </nav>-->
+<!--</header>-->
+<main class="chat" >
+    <div class="container">
+        <div class="chat-content bg-dark text-light">
+            <div class="card bg-dark">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item bg-dark" *ngFor="let chatMessage of webSocketService.chatMessages">
+                        <strong>{{chatMessage.user}}: </strong>
+                        <span>{{chatMessage.message}}</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <form (ngSubmit)="sendMessage(sendForm)" #sendForm="ngForm">
+            <div class="chat-send row">
+                <div class="col-2">
+                    <input type="text" class="form-control bg-dark text-light" placeholder="Player Name" name="user" id="input-user" ngModel>
+                </div>
+                <div class="col-8">
+                    <input type="text" class="form-control bg-dark text-light" placeholder="Message" name="message" id="input-message" ngModel>
+                </div>
+                <div class="col-2">
+                    <button type="submit" class="btn btn-primary">Send</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</main>
+</body>
+<footer>
+</footer>
+</html>

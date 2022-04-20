@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+          name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
+    <title>TicTacToe</title>
+  <link rel="icon" type="image/x-icon" href="src/main/resources/static/favicon.ico">
+    <link crossorigin="anonymous" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <!--    libs for stomp and sockjs-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sockjs-client/1.4.0/sockjs.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/stomp.js/2.3.3/stomp.min.js"></script>
+    <!--    end libs for stomp and sockjs-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</head>
+<body>
+<!--<div class="cssmarquee">-->
+<!--    <h1><center>University of Miskolc</center></h1>-->
+<!--</div>-->
+<img src=
+       "https://www.artistandinnovation.eu/wp-content/uploads/2020/10/miskolci-650x325-1.png"/>
+<!--<div class="container">-->
+<!--    <h2>University of Miskolc</h2>-->
+<!--</div>-->
+<body>
+<div class="text-center" id="box">
+    <header>
+        <h1>TIC TAC TOE</h1>
+    </header>
+    <center><input id="login" placeholder="Player Name">
+        <button onclick="create_game()">Create Game</button><br></center>
+<!--    <center><input id="game_id" placeholder="Enter Game ID"><button>Enter Game</button></center>-->
+    <center><button onclick="connect()">Connect to Game</button><br></center>
+    <div id="message"></div>
+    <ul id="gameBoard">
+        <li class="tic" id="0_0"></li>
+        <li class="tic" id="0_1"></li>
+        <li class="tic" id="0_2"></li>
+        <li class="tic" id="1_0"></li>
+        <li class="tic" id="1_1"></li>
+        <li class="tic" id="1_2"></li>
+        <li class="tic" id="2_0"></li>
+        <li class="tic" id="2_1"></li>
+        <li class="tic" id="2_2"></li>
+    </ul>
+    <div class="clearfix"></div>
+    <footer>
+        <center><button onclick="reset()">RESET</button><br></center>
+<!--        <span>Playing Against: <span id="oponentLogin"></span></span>-->
+    </footer>
+</div>
+<script src="js/script.js"></script>
+<script src="js/socket_js.js"></script>
+</body>
+</body>
+<div class="footer">
+    <h2 bgcolor = "indianred">Maradi Balachandra Vinay Karthik - AZF2YA</h2>
+    <h3 bgcolor = "aquamarine"><a href="https://github.com/vkvinay580">GitHub</a></h3>
+    <h3 color = "indian red"><div style="text-align: center;">Rules and How to Play:<br></div></h3>
+    <h5 color = "aquamarine"><div style="text-align: left;">>Player 1 Enters Player name and Creates a Game.<br>
+    >Player 2 Enters Player name and Connects to the Game.<br>
+    >Player 1 who creates the game gets the First Move.<br>
+    >After the game, reset the board and create a new game and join</left></div></h5>
+</div>
+
+</html>

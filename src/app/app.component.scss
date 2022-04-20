@@ -1,0 +1,122 @@
+body {
+  background: #000;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  color: #000;
+  border: 4px solid greenyellow;
+}
+
+h1 {
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  text-align: center;
+  color: #000;
+}
+h2 {
+  margin-top: 0.5em;
+  font-size: 2rem;
+  margin-bottom: 0.5em;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: paleturquoise;
+}
+.clearfix {
+  clear: both;
+}
+.cssmarquee {
+  height: 50px;
+  overflow: hidden;
+  position: relative;
+}
+.cssmarquee h1 {
+  font-size: 2em;
+  color: turquoise;
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  margin: 0;
+  line-height: 50px;
+  text-align: center;
+  transform:translateX(100%);
+  animation: cssmarquee 15s linear infinite;
+}
+@keyframes cssmarquee {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+#box {
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  width: 350px;
+  overflow: auto;
+  border: 4px solid greenyellow;
+  margin: 40px auto;
+  background: #4df79c;
+  padding-bottom: 40px;
+  border-radius: 10px;
+}
+
+#message {
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  background: #4df79c;
+  color: #000;
+}
+
+#gameBoard li {
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  float: left;
+  margin: 10px;
+  height: 70px;
+  width: 70px;
+  font-size: 50px;
+  background: #b3ff70;
+  color: #000;
+  list-style: none;
+  text-align: center;
+  border-radius: 5px;
+}
+
+#gameBoard li:hover, #reset:hover {
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  cursor: pointer;
+  background: mediumaquamarine;
+}
+
+#reset {
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  border: 0;
+  background: #000;
+  color: #4df79c;
+  width: 70%;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.o {
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  color: lawngreen !important;
+}
+
+.x {
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  color: indianred !important;
+}
+
+footer {
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  display: block;
+  background: #b3ff70;
+  text-align: center;
+  padding-top: 20px;
+}
+.footer {
+  text-align: center;
+  padding: 3px;
+  background-color: black;
+  color: darkturquoise;
+}
